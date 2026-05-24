@@ -34,7 +34,7 @@ public class SecurityConfig {
             .headers(headers -> headers.frameOptions(frame -> frame.disable()))
             .securityContext(context -> context.securityContextRepository(securityContextRepository()))
             .authorizeHttpRequests(auth -> auth
-                .requestMatchers("/auth/register", "/auth/login", "/h2-console/**").permitAll()
+                .requestMatchers("/", "/auth/register", "/auth/login", "/h2-console/**").permitAll()
                 .anyRequest().authenticated()
             )
             .exceptionHandling(ex -> ex
