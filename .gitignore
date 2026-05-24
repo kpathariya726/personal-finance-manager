@@ -1,0 +1,30 @@
+# Target directory (Maven builds)
+target/
+
+# Local tools directory (portable JDK and Maven)
+tools/
+tools/*.zip
+
+# IDE configurations
+.idea/
+.vscode/
+*.iml
+*.iws
+*.ipr
+.classpath
+.project
+.settings/
+
+# Database files (H2 DB files)
+*.mv.db
+*.trace.db
+
+# Log files
+*.log
+.system_generated/
+user1_session.txt
+user2_session.txt
+
+# OS temp files
+.DS_Store
+Thumbs.db
